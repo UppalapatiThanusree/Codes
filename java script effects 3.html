@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Console Debug</title></head>
+<body>
+
+<script>
+  let a = 5;
+  let b = 10;
+  console.log("Initial values:", "a =", a, ", b =", b); // 👈 logs values
+
+  let sum = a + b;
+  console.log("Sum of a and b is:", sum); // 👈 log result for debugging
+
+  // If something goes wrong
+  if (sum !== 15) {
+    console.error("Something's wrong with the addition logic!");
+  }
+</script>
+
+</body>
+</html>

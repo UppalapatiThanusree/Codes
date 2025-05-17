@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><title>Call and Apply</title></head>
+<body>
+
+<script>
+  const person = {
+    fullName: function(city, country) {
+      return this.firstName + " " + this.lastName + " from " + city + ", " + country;
+    }
+  };
+
+  const user = {
+    firstName: "Thanusree",
+    lastName: "Patel"
+  };
+
+  // Using call
+  const resultCall = person.fullName.call(user, "Hyderabad", "India");
+  document.write("Using call(): " + resultCall + "<br>");
+
+  // Using apply
+  const resultApply = person.fullName.apply(user, ["Hyderabad", "India"]);
+  document.write("Using apply(): " + resultApply);
+</script>
+
+</body>
+</html>

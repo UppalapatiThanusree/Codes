@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Shadow & Hover</title>
+  <style>
+    .image-box {
+      width: 250px;
+      box-shadow: 5px 5px 15px gray;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .image-box:hover {
+      transform: scale(1.05); /* Slight zoom */
+      box-shadow: 5px 10px 20px black;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://via.placeholder.com/250" class="image-box" alt="Image with Shadow">
+</body>
+</html>

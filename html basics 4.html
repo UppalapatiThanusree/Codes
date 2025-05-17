@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo Class and Element</title>
+  <style>
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    p::first-letter {
+      font-size: 200%;
+      color: green;
+    }
+
+    span::after {
+      content: " ⭐";
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pseudo Class and Element Example</h1>
+
+  <p>This paragraph uses <code>::first-letter</code> to style the first character.</p>
+
+  <a href="#">Hover over this link</a><br><br>
+
+  <span>This span will have something added after it</span>
+
+</body>
+</html>

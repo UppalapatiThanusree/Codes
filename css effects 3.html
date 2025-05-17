@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Positions</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 80px;
+      margin: 10px;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .static { position: static; background-color: teal; }
+    .relative { position: relative; left: 20px; background-color: purple; }
+    .fixed { position: fixed; top: 10px; right: 10px; background-color: brown; }
+    .absolute-container { position: relative; height: 150px; background: #f0f0f0; }
+    .absolute { position: absolute; top: 20px; left: 20px; background-color: green; }
+    .sticky { position: sticky; top: 0; background-color: darkorange; }
+  </style>
+</head>
+<body>
+
+  <div class="box static">Static</div>
+  <div class="box relative">Relative</div>
+  <div class="box fixed">Fixed (Top Right)</div>
+
+  <div class="absolute-container">
+    <div class="box absolute">Absolute (inside relative)</div>
+  </div>
+
+  <div style="height: 2000px;">
+    <div class="box sticky">Sticky (sticks on scroll)</div>
+  </div>
+
+</body>
+</html>

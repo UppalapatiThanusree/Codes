@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML5 Semantic Page</title>
+  <style>
+    body { font-family: Arial; margin: 0; }
+    header, footer, nav, section, article, aside {
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid #ddd;
+    }
+    header { background: #f0f0f0; }
+    nav a { margin: 0 10px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <hgroup>
+      <h1>My Semantic Web Page</h1>
+      <h2>A demonstration of HTML5 elements</h2>
+    </hgroup>
+    <nav>
+      <a href="#news">News</a>
+      <a href="#aside">Sidebar</a>
+      <a href="#footer">Footer</a>
+    </nav>
+  </header>
+
+  <section>
+    <article id="news">
+      <h2>Tech Update</h2>
+      <p>HTML5 introduced new semantic tags to enhance structure and clarity.</p>
+      <p>Published at <time datetime="2025-05-17">May 17, 2025</time></p>
+    </article>
+
+    <figure>
+      <img src="https://via.placeholder.com/150" alt="Example image">
+      <figcaption>This is a placeholder image.</figcaption>
+    </figure>
+  </section>
+
+  <aside id="aside">
+    <h3>Did You Know?</h3>
+    <p><mark>HTML5</mark> also introduced multimedia support and form enhancements.</p>
+  </aside>
+
+  <footer id="footer">
+    <p>&copy; 2025 Thanusree's Web Experiments</p>
+  </footer>
+
+</body>
+</html>

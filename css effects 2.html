@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animations & Pagination</title>
+  <style>
+    /* Animation Keyframes */
+    @keyframes slideIn {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .animated-box {
+      width: 200px;
+      height: 100px;
+      background-color: lightcoral;
+      animation-name: slideIn;
+      animation-duration: 2s;
+      animation-delay: 0.5s;
+      animation-iteration-count: 1;
+    }
+
+    /* Pagination Styles */
+    .pagination {
+      display: flex;
+      list-style: none;
+      margin-top: 30px;
+    }
+
+    .pagination li {
+      margin: 0 5px;
+    }
+
+    .pagination li a {
+      text-decoration: none;
+      padding: 8px 12px;
+      color: white;
+      background-color: #444;
+    }
+
+    .pagination li a:hover {
+      background-color: #007bff;
+    }
+
+    .pagination.no-space li {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-box"></div>
+
+  <h3>Pagination With Spaces:</h3>
+  <ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+  </ul>
+
+  <h3>Pagination Without Spaces:</h3>
+  <ul class="pagination no-space">
+    <li><a href="#">A</a></li>
+    <li><a href="#">B</a></li>
+    <li><a href="#">C</a></li>
+  </ul>
+</body>
+</html>

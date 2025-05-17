@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title>Getter Setter Counter</title></head>
+<body>
+
+<h2>Advanced Counter: <span id="value">0</span></h2>
+<button onclick="counter.increment()">Increment</button>
+
+<script>
+  const counter = {
+    _count: 0,
+
+    get current() {
+      return this._count;
+    },
+
+    set current(val) {
+      this._count = val;
+      document.getElementById("value").textContent = this._count;
+    },
+
+    increment() {
+      this.current = this.current + 1;
+    }
+  };
+</script>
+
+</body>
+</html>

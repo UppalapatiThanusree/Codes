@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Show Date & Time</title></head>
+<body>
+
+<button id="showTimeBtn">Show Date and Time</button>
+<p id="output"></p>
+
+<script>
+  document.getElementById("showTimeBtn").addEventListener("click", function () {
+    const now = new Date();
+    document.getElementById("output").textContent = now.toString();
+  });
+</script>
+
+</body>
+</html>

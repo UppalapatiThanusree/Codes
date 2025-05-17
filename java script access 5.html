@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Object Prototype Example</title></head>
+<body>
+
+<script>
+  function Person(name) {
+    this.name = name;
+  }
+
+  // Adding a method using prototype
+  Person.prototype.sayHello = function() {
+    return "Hi, I'm " + this.name;
+  };
+
+  // Adding a new property
+  Person.prototype.country = "India";
+
+  const user = new Person("Thanusree");
+  document.write(user.sayHello() + "<br>");
+  document.write("Country: " + user.country);
+</script>
+
+</body>
+</html>
